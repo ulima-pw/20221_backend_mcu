@@ -8,6 +8,9 @@ const PORT = 5000
 // Configuro para recibir cualquier peticion de cualquier
 // cliente
 app.use(cors())
+// Configurando el directorio assets para que tenga archivos
+// estaticos.
+app.use(Express.static("assets"))
 
 // Endpoint; GET /movies
 // http://localhost:5000/movies?fase=1
